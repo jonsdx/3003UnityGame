@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: girl_jogger
+  m_Controller: {fileID: 9100000, guid: 6344ca0980e3ba949b5381c530924a1f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 55f91a605d14120408e39a7bcdb763c0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7ce1af122f0955a4a9d504304ef26578, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: da77a8e2b78cc6b47b0ae0c333f1518e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 23e80bb4cb7487a4c93c45c1012de839, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 77f82aa5d4860e54eb313ea66978399d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 32ab2d17362d6f84d86a023c387801bc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5b2eaa1a0619e734aa489c49153fb80e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 175b0aaf77c8e2d4484a8d8f1dff06bd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8d117d12efe92d54b934b1eec01a18ac, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8542ba083106c6041aeaeb88845215af, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cc4d9ca0ef8bcf843b10bda9a55d4893, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fbf562d6ae8fb43408b9e7ff234fa363, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4e4c2491ecaa9cd4c81dd6f3ecf15b70, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e34c4087a24e56848a212bf29e656053, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 82c78008ef476014186f1992ce436182, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: eda6735a00fb03b4e92d3a50db7e95ab, type: 2}
