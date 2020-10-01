@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 86
+  controlID: 40
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 87
+  controlID: 41
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 88
+  controlID: 42
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,10 +355,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 1fcc3c66b8968bb4f922103fd0bf3583,
+  m_AnimatorController: {fileID: 9100000, guid: 6344ca0980e3ba949b5381c530924a1f,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -3192919010078038544, guid: 1fcc3c66b8968bb4f922103fd0bf3583,
+  - m_Target: {fileID: 2994982672843567892, guid: 6344ca0980e3ba949b5381c530924a1f,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -534,19 +534,19 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\jonsd\Desktop\3003Game
+  m_LastProjectPath: C:\Users\jonsd\Documents\GitHub\3003UnityGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: de8a0000
-    m_LastClickedID: 35550
+    m_SelectedIDs: 028b0000
+    m_LastClickedID: 35586
     m_ExpandedIDs: 00000000de8a0000e08a0000e28a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300005e5f0000625f0000fa390000503b0000624b0000243b0000a23d0000343c0000ac3d000038950000cc71000000000000ca710000d66d0000047b0000ce87000026b5000054700000e47c0000427000005e9e0000f0860000fe8700004a3b0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -698,23 +698,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5efbffff
+      m_SelectedIDs: fa5a0100
+      m_LastClickedID: 88826
+      m_ExpandedIDs: f2befeffc010ffff4a12ffffec15ffff8819ffff541dffffa21effff1024ffffc828ffff342afffffe2dffff2844ffff9a45ffff6e49ffff7861ffffc465ffff3670ffffc071ffff087cffff8a7dffff9487ffffaa89ffffd492ffffe694ffff22b6ffff9eb7ffff5efbfffff4ffffff28d9000020fe000088fe0000442f0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: shittyportal
+        m_OriginalName: shittyportal
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 88826
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -760,9 +760,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.0566022, y: 24.314978, z: -1.8837891}
+    m_Target: {x: -0.53, y: 23.08, z: 0}
     speed: 2
-    m_Value: {x: 1.0566022, y: 24.314978, z: -1.8837891}
+    m_Value: {x: -0.53, y: 23.079996, z: -0.000000037020072}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -812,9 +812,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.948658
+    m_Target: 10
     speed: 2
-    m_Value: 5.948658
+    m_Value: 9.999999
   m_Ortho:
     m_Target: 1
     speed: 2

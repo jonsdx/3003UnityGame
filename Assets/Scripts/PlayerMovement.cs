@@ -39,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
-        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

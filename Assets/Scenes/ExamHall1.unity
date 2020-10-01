@@ -371,12 +371,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 120091816}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &120091818 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5747154518171359236, guid: 3fcd472b9744ff944a61803fdbcc5b77,
-    type: 3}
-  m_PrefabInstance: {fileID: 120091816}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &175632750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,7 +1317,7 @@ MonoBehaviour:
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
   dialogBox: {fileID: 1253086142}
   dialogText: {fileID: 1011229943}
-  collision: {fileID: 120091818}
+  collision: {fileID: 0}
 --- !u!1 &861904487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: StartMenu
-  playerPosition: {x: 0, y: 0}
+  playerPosition: {x: -2.574, y: 2.1}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
 --- !u!1 &1504901682 stripped
 GameObject:
@@ -1956,12 +1950,12 @@ PrefabInstance:
     - target: {fileID: 257573881652071865, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.86456203
+      value: -2.0910525
       objectReference: {fileID: 0}
     - target: {fileID: 257573881652071865, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
         type: 3}
       propertyPath: m_Size.x
-      value: 2.729124
+      value: 5.182105
       objectReference: {fileID: 0}
     - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
         type: 3}
@@ -2204,12 +2198,12 @@ PrefabInstance:
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: playerPosition.x
-      value: 0
+      value: -2.574
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: playerPosition.y
-      value: 0
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
