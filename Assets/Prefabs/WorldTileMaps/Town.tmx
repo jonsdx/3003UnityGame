@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="left-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="40">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="left-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="41">
  <tileset firstgid="1" name="overworld" tilewidth="16" tileheight="16" tilecount="1440" columns="40">
   <image source="../Art/Overworld.png" width="640" height="576"/>
   <terraintypes>
@@ -181,9 +181,6 @@
   <object id="6" x="320.667" y="353.333">
    <polygon points="0,0 -0.666667,13.3333 14,13.3333 15.3333,-1.33333"/>
   </object>
-  <object id="7" x="326" y="335.333">
-   <polygon points="0,0 27.3333,-1.33333 28.3333,-17.6667 39.3333,-19 39.6667,-1.33333 69.6667,-2 71,-63 36.6667,-79.6667 -5.33333,-60.6667"/>
-  </object>
   <object id="8" x="384.333" y="341">
    <polygon points="0,0 1,11.3333 15.3333,8.66667 14,-4.33333"/>
   </object>
@@ -221,6 +218,9 @@
   </object>
   <object id="39" x="769.453" y="350.801">
    <polygon points="0,0 30.3162,-0.721813 31.038,-350.801 -768.009,-351.523 -769.453,-20.2108 -723.257,-17.3235 -713.151,0.721813 -558.683,3.60907 -546.413,-8.66176 -547.134,-51.2487 -561.571,-52.6924 -562.292,-12.2708 -689.332,-11.549 -689.332,-258.409 -402.772,-259.131 -397.719,-316.154 -174.679,-313.989 -173.235,-272.124 -1.44363,-273.567"/>
+  </object>
+  <object id="40" x="358.741" y="257.687">
+   <polygon points="0,0 -33.9252,15.8799 -34.647,47.6397 -30.3162,74.3468 -10.1054,73.6249 -10.1054,51.9706 12.2708,51.2487 13.7145,72.1813 29.5943,73.6249 35.3688,51.2487 35.3688,16.6017"/>
   </object>
  </objectgroup>
 </map>

@@ -26,18 +26,20 @@ public class FBhelper : MonoBehaviour
     Dictionary<string, dynamic> dict_sec;
     Dictionary<string, dynamic> dict_qn;
     string difficulty = "easy"; // later need to allow user choose ??? how ??
-    
+
+    // ==== below is for get user ======
+    string id = "John"; // later get from default student
+    string progress = "w0s0"; // world x section x that he has cleared , here is w1s0 means at the start
+    Dictionary<string, dynamic> dict_user;
 
     // Start is called before the first frame update
     void Start()
     {   
-        // on_start.text = "welcome!";
+
         reference = FirebaseDatabase.DefaultInstance.RootReference;
         // Set up the Editor before calling into the realtime database.
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://unity-firebase-test1-5fbe2.firebaseio.com/");
-        // on_start.text = "line 26";
         // Get the root reference location of the database. 
-        // on_start.text = "line 29";
 
     }
 
@@ -68,6 +70,12 @@ public class FBhelper : MonoBehaviour
 
     }
 
+// ======================== Functions to return data for game =======================================
+
+    public string Get_progress(){
+        Debug.Log("progress is "+ progress);
+        return progress;
+    }
 
     public string[] Get_Qn_Array(){
         ar_qn = long_qns.ToArray();
@@ -102,6 +110,16 @@ public class FBhelper : MonoBehaviour
         return ar_time;
     }
 
+///===============functions to Write to FireBase ====================================================
+
+    public void Save_progress(string prog, string uid = "-"){
+        if (uid == "-") uid = id;
+        else id = uid;
+        reference.Child("Users").Child(uid).Child("progress_str").SetValueAsync(prog);
+    }
+
+///========== functions to READ from firebase and update class attributes ============================
+
     public void Loop_getQn(){
         for (int i = 0; i< qn_pointers.Count; i++){
                 FirebaseDatabase.DefaultInstance.GetReference("Questions").Child(qn_pointers[i]).ValueChanged += Script_ValueChanged_Question;
@@ -111,7 +129,6 @@ public class FBhelper : MonoBehaviour
     public void getQn() // for testing
     {
         FirebaseDatabase.DefaultInstance.GetReference("Questions").Child(input_str).ValueChanged += Script_ValueChanged_Question;
-
     }
 
     public void getSec(string str = "-") /// for debug  old param:     string str = "w5s3"
@@ -120,6 +137,12 @@ public class FBhelper : MonoBehaviour
         FirebaseDatabase.DefaultInstance.GetReference("Sections").Child(str).ValueChanged += Script_ValueChanged_Section;
         Debug.Log("==== in helper ==== after getSec, "+qn_pointers.Count.ToString()+" questions found, time per qn = "+ time_per_qn.ToString());
         return;
+    }
+
+    public void getUser(string uid = "-") // to grab the entire user
+    {   if (uid == "-") uid = id;
+        else id = uid;
+        FirebaseDatabase.DefaultInstance.GetReference("Users").Child(uid).ValueChanged += Script_ValueChanged_User;
     }
 
 
@@ -145,13 +168,46 @@ public class FBhelper : MonoBehaviour
         else return str;
     }
 
+    bool compare_progress(string to_compare) // self bigger is true, self smaller is false
+    {
+        int user_w = Int32.Parse(progress.Substring(1, 1));
+        int user_s = Int32.Parse(progress.Substring(3, 1));
+
+        int w = Int32.Parse(to_compare.Substring(1, 1));
+        int s = Int32.Parse(to_compare.Substring(3, 1)); 
+
+        int user_ws = user_w*10+user_s;
+        int ws = w*10+s;
+
+        if (user_w > w) return true;
+
+        else if(user_w == w){
+            if(user_s < s-1) return false;
+            else return true;
+        } 
+        
+        else if(user_w < w){
+            if((user_w == w-1) && ((user_s==3) && (s==1)) ) return true;  // assuming 1 world 3 sections, so if he finished w1s3 can go w2s1;
+            return false;
+        }
+        return false;
+    }
+
 /// ------------------------ THE CHOSEN way of get data functions -----------------
 
+
+    public void Script_ValueChanged_User (object sender, ValueChangedEventArgs e)
+    {
+        json_ds = e.Snapshot.GetRawJsonValue();
+        dict_user = JsonConvert.DeserializeObject<Dictionary<string, object>>(json_ds);
+        progress = dict_user["progress_str"];
+        Debug.Log("user file copied from firebase");
+        return;
+    }
+    
     public void Script_ValueChanged_Section (object sender, ValueChangedEventArgs e)
     {
         temp_out = "";
-        string str_ds;
-        string json_ds;
         json_ds = e.Snapshot.GetRawJsonValue();
         dict_sec = JsonConvert.DeserializeObject<Dictionary<string, object>>(json_ds);
         List<string> ls_ppointer_in_func = new List<string>();
@@ -218,11 +274,6 @@ public class FBhelper : MonoBehaviour
                 }
             long_qns.Add(str_long_qn);
             Debug.Log(str_long_qn);
-        //     LoadedText.text = json_ds;
-            
-        // LoadedText.text = "out sied else "+json_ds;    
-        
-        // LoadedText.text = "in side script value changed , long_qns list len = "+long_qns.Count.ToString();
     }
 
 }

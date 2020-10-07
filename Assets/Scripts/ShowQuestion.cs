@@ -40,6 +40,7 @@ public class ShowQuestion : MonoBehaviour
     Dictionary<string, dynamic> dict_sec;
     Dictionary<string, dynamic> dict_qn;
     string difficulty = "easy"; 
+    string id = "John";
     // YL added for importing class approach =================================
     FBhelper helper;
     
@@ -71,6 +72,7 @@ public class ShowQuestion : MonoBehaviour
             GetComponent<Collider2D>().enabled = false;
         }
         helper.getSec(section);
+        helper.getUser(id);
     }
 
     void Awake(){
@@ -99,7 +101,7 @@ public class ShowQuestion : MonoBehaviour
         // Get_Time_Array();
 
         while (i<questions.Length)
-        {
+        {   
             dialogText.text = "Processing...";
             for (int j=inbetweenTime;j>inbetweenTime-2;j--)
             {
@@ -113,6 +115,7 @@ public class ShowQuestion : MonoBehaviour
                 yield return new WaitForSeconds(1.0f);
             }
             ResetHall();
+            dialogBox.SetActive(true);
             dialogText.text = questions[i];
             for (int k=(int)questionTime[i];k>0;k--)
             {
@@ -123,8 +126,8 @@ public class ShowQuestion : MonoBehaviour
             i++;
         }
         if (i == questions.Length)
-        {
-            dialogText.text = "End of Quiz!";
+        {   dialogBox.SetActive(true);
+            dialogText.text = "End of Quiz! Congratulations for finishing, young programmer.";
             for (int j=inbetweenTime;j>0;j--)
             {
                 timeLeft.text = j.ToString();
@@ -132,7 +135,10 @@ public class ShowQuestion : MonoBehaviour
             }
             ResetHall();
             timer.SetActive(false);
-            dialogText.text = "Quiz is over, Get out of here!";
+            dialogBox.SetActive(true);
+            // helper.Save_progress(section);
+            check_write_progress();
+            dialogText.text = "Quiz is over, Get out of here through that pink-ish purple hole!";
             portal.SetActive(true);
             portal.GetComponent<Collider2D>().enabled = true;
         }
@@ -196,6 +202,16 @@ public class ShowQuestion : MonoBehaviour
 
     public void helper_loop(){
         helper.Loop_getQn();
+    }
+
+    void check_write_progress(){
+        string user_progress = helper.Get_progress();
+        int user_w = Int32.Parse(user_progress.Substring(1, 1));
+        int user_s = Int32.Parse(user_progress.Substring(3, 1));
+        int w = Int32.Parse(section.Substring(1, 1));
+        int s = Int32.Parse(section.Substring(3, 1)); 
+        if((user_w == w) && (user_s == s-1)) helper.Save_progress(section);
+        else if((user_w == w-1) && (user_s == 3)) helper.Save_progress(section); // assume each world has 3 section
     }
 
     public void helper_qn_arr(){

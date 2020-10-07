@@ -19,8 +19,9 @@ public class WrongAnswer : MonoBehaviour
         {   
             dialogBox.SetActive(true);
             dialogText.text = "Incorrect Answer! You have been kicked out of the hall.";
+
             GameObject.Find("Student_Default").GetComponent<PlayerMovement>().StopMove();
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(2.5f);
 
             dialogBox.SetActive(false);
             GameObject.Find("Student_Default").transform.position = playerPosition;

@@ -48,6 +48,20 @@ public class InputScript : MonoBehaviour
     {
         // upload scores !!!!!!
     }
+
+    public void helper_save_progress(){
+        helper.Save_progress(Email.text.ToString());
+    }    
+    public void helper_get_user(){
+        helper.getUser();
+    }    
+
+    public void helper_get_progress(){
+        LoadedText.text = helper.Get_progress();
+        string prog = helper.Get_progress();
+        Debug.Log("1,2 is "+prog.Substring(1, 1)+" 2,3 is "+prog.Substring(2,1));
+        Debug.Log(Int32.Parse("1"));
+    }
     
     public void helper_status(){
         helper.get_status();

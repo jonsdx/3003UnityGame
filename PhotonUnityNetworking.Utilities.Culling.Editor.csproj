@@ -264,6 +264,54 @@
  <Reference Include="websocket-sharp">
  <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
+ <Reference Include="Google.PackageManagerResolver_v1.2.156">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.external-dependency-manager@1.2.156/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.156.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.external-dependency-manager@1.2.156/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver_v1.2.156">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.external-dependency-manager@1.2.156/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.156.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl_v1.2.156">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.external-dependency-manager@1.2.156/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.156.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver_v1.2.156">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.external-dependency-manager@1.2.156/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.156.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.TaskExtension">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Editor">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.app@6.15.2/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Auth">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.auth@6.15.2/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Database">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.database@6.15.2/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Firestore">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.google.firebase.firestore@6.15.2/Firebase/Plugins/Firebase.Firestore.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
  </Reference>
@@ -617,6 +665,18 @@
  </Reference>
  <Reference Include="Boo.Lang">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Users/yuling.lin/Applications/Unity/3003UnityGame/3003UnityGame/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
