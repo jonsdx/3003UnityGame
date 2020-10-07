@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExamHall1.unity
     guid: 6e347a35b7b428f4ba9882b4397a5370
+  - enabled: 1
+    path: Assets/Scenes/w5s3.unity
+    guid: 8f5aee40b28c6474e820c4a9715e4b77
   m_configObjects: {}

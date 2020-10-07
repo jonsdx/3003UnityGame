@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "433458641818",
+    "firebase_url": "https://unity-firebase-test1-5fbe2.firebaseio.com",
+    "project_id": "unity-firebase-test1-5fbe2",
+    "storage_bucket": "unity-firebase-test1-5fbe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433458641818:android:ff90d760c7b211c71e5823",
+        "android_client_info": {
+          "package_name": "com.NTUlearnt.firebase_test1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433458641818-1tgh4tg722udf4o9locj7nolre7g5d1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfYTFtKJ7mDggORaXtak6aM_UQ2PJy4Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433458641818-1tgh4tg722udf4o9locj7nolre7g5d1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
