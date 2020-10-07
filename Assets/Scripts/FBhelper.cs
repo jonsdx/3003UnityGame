@@ -51,6 +51,10 @@ public class FBhelper : MonoBehaviour
         Debug.Log("---------- this is FirebaseQn object-----------------------");
     }
 
+    public void Set_difficulty(string str){
+        difficulty = str; // easy medium hard
+    }
+
 
     public void get_status(){
         Debug.Log("============= current object status ============== "+ System.Environment.NewLine +
@@ -176,8 +180,7 @@ public class FBhelper : MonoBehaviour
 
     public void Script_ValueChanged_Question (object sender, ValueChangedEventArgs e)
     {
-            // on_start.text = "line 166";
-            // input_str = qn.text.ToString();
+
             string str_long_qn = " ";
             
             DataSnapshot snapshot = e.Snapshot;
