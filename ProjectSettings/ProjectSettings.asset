@@ -167,11 +167,10 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier:
-    Android: com.NTUlearnt.firebase_test1
+  applicationIdentifier: {}
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 26
+  AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -568,8 +567,7 @@ PlayerSettings:
   scriptingRuntimeVersion: 1
   gcIncremental: 0
   gcWBarrierValidation: 0
-  apiCompatibilityLevelPerPlatform:
-    Android: 3
+  apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Template_2D

@@ -237,9 +237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8d5dfaeb056d749af4f3f20c7dbc8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: -1, y: 0}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
-  character: {fileID: 1921880681}
+  character: {fileID: 0}
 --- !u!1 &251637642
 GameObject:
   m_ObjectHideFlags: 0

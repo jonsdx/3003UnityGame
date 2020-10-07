@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="7">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="8">
  <tileset firstgid="1" source="../overworld.tsx"/>
  <tileset firstgid="1441" name="Inner" tilewidth="16" tileheight="16" tilecount="1000" columns="40">
   <image source="../../Art/Inner.png" width="640" height="400"/>
@@ -75,8 +75,8 @@
 </data>
  </layer>
  <objectgroup id="4" name="Collision">
-  <object id="6" x="368" y="274">
-   <polygon points="0,0 0,77 -32,77 -33,95 -64,94 -63,111 -79,109 -80,141 -95,141 -95,173 -192,175 -194,364 208,366 207,-2"/>
+  <object id="7" x="369" y="272">
+   <polygon points="0,0 207,1 206,365 -194,367 -195,175 -97,177 -96,144 -82,144 -80,114 -63,115 -65,95 -35,97 -33,82 -4,80 -5,-29 5,-29 5,93 -23,95 -21,111 -55,109 -56,133 -71,132 -73,163 -84,161 -85,192 -180,189 -182,356 196,354 194,15 3,11"/>
   </object>
  </objectgroup>
 </map>

@@ -362,23 +362,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5747154518171359236, guid: 3fcd472b9744ff944a61803fdbcc5b77,
-        type: 3}
-      propertyPath: m_Name
-      value: Collision
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -2695619058785784247, guid: 3fcd472b9744ff944a61803fdbcc5b77,
     type: 3}
 --- !u!4 &120091817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1289875747921440056, guid: 3fcd472b9744ff944a61803fdbcc5b77,
-    type: 3}
-  m_PrefabInstance: {fileID: 120091816}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &120091818 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5747154518171359236, guid: 3fcd472b9744ff944a61803fdbcc5b77,
     type: 3}
   m_PrefabInstance: {fileID: 120091816}
   m_PrefabAsset: {fileID: 0}
@@ -470,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  playerPosition: {x: -2.5, y: 2}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
   dialogBox: {fileID: 1253086142}
   dialogText: {fileID: 1011229943}
@@ -560,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  playerPosition: {x: -2.5, y: 2}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
   dialogBox: {fileID: 1253086142}
   dialogText: {fileID: 1011229943}
@@ -1324,11 +1313,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  playerPosition: {x: -2.5, y: 2}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
   dialogBox: {fileID: 1253086142}
   dialogText: {fileID: 1011229943}
-  collision: {fileID: 120091818}
+  collision: {fileID: 0}
 --- !u!1 &861904487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  playerPosition: {x: -2.5, y: 2}
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
   dialogBox: {fileID: 1253086142}
   dialogText: {fileID: 1011229943}
@@ -1646,9 +1635,6 @@ MonoBehaviour:
   - 10
   - 10
   quizStart: 0
-  section: 
-  last_long_qn: never update
-  last_pointer: never update
 --- !u!60 &1316006638
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1845,8 +1831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890e1541874b8754fb055be79d63984e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SampleScene
-  playerPosition: {x: -2.5, y: 2}
+  sceneToLoad: StartMenu
+  playerPosition: {x: -2.574, y: 2.1}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
 --- !u!1 &1504901682 stripped
 GameObject:
@@ -1964,12 +1950,12 @@ PrefabInstance:
     - target: {fileID: 257573881652071865, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.86456203
+      value: -2.0910525
       objectReference: {fileID: 0}
     - target: {fileID: 257573881652071865, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
         type: 3}
       propertyPath: m_Size.x
-      value: 2.729124
+      value: 5.182105
       objectReference: {fileID: 0}
     - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
         type: 3}
@@ -2212,12 +2198,12 @@ PrefabInstance:
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: playerPosition.x
-      value: -2.5
+      value: -2.574
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: playerPosition.y
-      value: 2
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
