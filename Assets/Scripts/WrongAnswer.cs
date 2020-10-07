@@ -23,7 +23,7 @@ public class WrongAnswer : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
 
             dialogBox.SetActive(false);
-            playerStorage.initialValue = playerPosition;
+            GameObject.Find("Student_Default").transform.position = playerPosition;
             SceneManager.LoadScene(sceneToLoad);
             GameObject.Find("Student_Default").GetComponent<PlayerMovement>().StartMove();
             collision.SetActive(true);
