@@ -606,6 +606,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1479186934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 257573881652071865, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1.0273855
+      objectReference: {fileID: 0}
+    - target: {fileID: 257573881652071865, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.054771
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1637994089
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7206194005228167239, guid: acc221d458a8c7f4d9a50a270b64bf1c,
+        type: 3}
+    - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975398642024378105, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260292121281186896, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_Name
+      value: ExamHall1 Sign (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.5478516
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662225029211384, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e7c51357cb8e3a4f993c93df0a57f50, type: 3}
+--- !u!1 &1479186935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3260292121281186896, guid: 4e7c51357cb8e3a4f993c93df0a57f50,
+    type: 3}
+  m_PrefabInstance: {fileID: 1479186934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1479186936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479186935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c613a8ed290e54f8412b9f5431621a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: 272fbe768e7f97746a585965db6eb8a4, type: 2}
+  contextOff: {fileID: 11400000, guid: 4ba8f2ff6f3845b419eae2e83554465a, type: 2}
+  dialogBox: {fileID: 734115024}
+  dialogText: {fileID: 1713981086}
+  dialog: Welcome to the world of software dev! young man
+  playerInRange: 1
 --- !u!1001 &1699985177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -718,17 +852,17 @@ PrefabInstance:
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: sceneToLoad
-      value: ExamHall1
+      value: w5s3
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: playerPosition.x
-      value: -1.57
+      value: -1.26
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: playerPosition.y
-      value: 0.5
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 3527608127525483475, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
@@ -808,7 +942,7 @@ PrefabInstance:
     - target: {fileID: 5838263752643001962, guid: 9049761b427c06c42a239d06571ee442,
         type: 3}
       propertyPath: m_Name
-      value: To Exam Hall 1
+      value: To w5s3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9049761b427c06c42a239d06571ee442, type: 3}
