@@ -1635,6 +1635,9 @@ MonoBehaviour:
   - 10
   - 10
   quizStart: 0
+  section: 
+  last_long_qn: never update
+  last_pointer: never update
 --- !u!60 &1316006638
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1831,8 +1834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890e1541874b8754fb055be79d63984e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: StartMenu
-  playerPosition: {x: -2.574, y: 2.1}
+  sceneToLoad: SampleScene
+  playerPosition: {x: -12, y: -10}
   playerStorage: {fileID: 11400000, guid: 6eabf197f422bc54d8894f7c02fd47e7, type: 2}
 --- !u!1 &1504901682 stripped
 GameObject:

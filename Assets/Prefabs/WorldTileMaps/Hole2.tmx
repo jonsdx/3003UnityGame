@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="8">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="7">
  <tileset firstgid="1" source="../overworld.tsx"/>
  <tileset firstgid="1441" name="Inner" tilewidth="16" tileheight="16" tilecount="1000" columns="40">
   <image source="../../Art/Inner.png" width="640" height="400"/>
@@ -74,9 +74,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="4" name="Collision">
-  <object id="7" x="177" y="274">
-   <polygon points="0,0 206,-1 205,79 237,78 238,94 269,94 270,109 286,109 286,141 302,141 303,175 399,173 397,365 385,365 386,182 292,185 291,150 277,151 280,119 257,119 260,103 227,102 226,88 196,89 195,9 10,10 12,349 382,353 382,368 0,364"/>
+ <objectgroup id="4" name="Object Layer 1">
+  <object id="6" x="173.333" y="272">
+   <polygon points="0,0 209.333,0 209.333,80 241.333,80 241.333,97.3333 274.667,94.6667 272,116 286.667,114.667 288,144 305.333,145.333 305.333,176 401.333,173.333 401.333,366.667 4,368"/>
   </object>
  </objectgroup>
 </map>

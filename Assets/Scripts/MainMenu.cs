@@ -25,8 +25,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame(){
         SceneManager.LoadScene("SampleScene");
-        character.transform.localScale = scaleChange;
-        character.transform.position = playerPosition;
+        GameObject.FindWithTag("Player").transform.localScale = scaleChange;
+        playerStorage.initialValue = playerPosition;
         character.GetComponent<PlayerMovement>().StartMove();
     }
 
