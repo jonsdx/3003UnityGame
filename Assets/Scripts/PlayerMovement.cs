@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// comment
 public enum PlayerState{
     walk,
     attack,
