@@ -37,7 +37,7 @@ public class InputScript : MonoBehaviour
             System.Threading.Thread.Sleep(1);
             continue;
         }
-        if (helper_got_sec == true) {
+        if (helper_got_sec = true) {
             helper_loop();
             Debug.Log("try to run helper loop finish");
         }
