@@ -31,9 +31,14 @@ public class FBhelper : MonoBehaviour
     string id = "John"; // later get from default student
     string progress = "w0s0"; // world x section x that he has cleared , here is w1s0 means at the start
     Dictionary<string, dynamic> dict_user;
+<<<<<<< Updated upstream
     int attempt_count;
 
+=======
+    public bool returnCatch = false;
+>>>>>>> Stashed changes
     // Start is called before the first frame update
+    
     void Start()
     {   
 
@@ -45,6 +50,7 @@ public class FBhelper : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void Update()
     {
         // upload scores !!!!!!
@@ -69,6 +75,44 @@ public class FBhelper : MonoBehaviour
         // " len of Array ar_ans = "+ ar_ans.Length + System.Environment.NewLine
         );
 
+    }
+
+// ======================== For main menu simple auth ==============================================
+    public bool authChecker(InputField Username, InputField Password){
+        //simple authentication
+        string username = Username.text;
+        string password = Password.text;
+
+        FirebaseDatabase.DefaultInstance.GetReference("Users").GetValueAsync().ContinueWith(task => {
+            
+            if (task.IsFaulted) {
+            // Handle the error...
+            }   
+            else if (task.IsCompleted) {
+                DataSnapshot snapshot = task.Result.Child(username);
+            // Do something with snapshot...
+                json_ds = snapshot.GetRawJsonValue();
+                dict_sec = JsonConvert.DeserializeObject<Dictionary<string, object>>(json_ds);
+                foreach(KeyValuePair<string, dynamic> entry in dict_sec){
+                    Debug.Log(entry.Value);
+                    if(entry.Key == "Password"){
+                        returnCatch = !returnCatch;
+                        //return returnCatch;
+                    }
+                }
+            }
+        });
+
+        Debug.Log(returnCatch);
+        return returnCatch;
+        
+    }
+    
+// ======================== For persistentCharData updates ==========================================
+
+    public void updateCharacterData(){
+        //modify persistent data
+        
     }
 
 // ======================== Functions to return data for game =======================================
