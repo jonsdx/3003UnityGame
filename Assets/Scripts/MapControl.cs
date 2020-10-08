@@ -13,6 +13,7 @@ public class MapControl : MonoBehaviour
 {
     FBhelper helper;
     public GameObject door_w1s2;
+    public GameObject door_w1s3;
     string user_progress = "w0s0";
     string id = "John"; // later see how to change it
     bool playerInRange;
@@ -21,6 +22,7 @@ public class MapControl : MonoBehaviour
     void Start()
     {   
         door_w1s2.SetActive(false);
+        door_w1s3.SetActive(false);
         helper = gameObject.AddComponent(typeof(FBhelper)) as FBhelper;
         helper.getUser(id);
         // user_progress = helper.Get_progress();
@@ -34,7 +36,9 @@ public class MapControl : MonoBehaviour
     {   
         if(playerInRange)
         {   user_progress = helper.Get_progress();          /// scare this is resource consuming
-            door_w1s2.SetActive(compare_progress("w1s2"));}
+            door_w1s2.SetActive(compare_progress("w1s2"));
+            door_w1s3.SetActive(compare_progress("w1s3"));
+            }
     }
     
     public void helper_save_progress(){

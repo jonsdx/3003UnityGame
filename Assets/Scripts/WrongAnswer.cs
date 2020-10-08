@@ -20,6 +20,10 @@ public class WrongAnswer : MonoBehaviour
             dialogBox.SetActive(true);
             dialogText.text = "Incorrect Answer! You have been kicked out of the hall.";
 
+            int score = GameObject.Find("Question").GetComponent<ShowQuestion>().get_score();
+            GameObject.Find("Question").GetComponent<FBhelper>().Save_score(score);
+            Debug.Log(score+" is your score");
+            
             GameObject.Find("Student_Default").GetComponent<PlayerMovement>().StopMove();
             yield return new WaitForSeconds(2.5f);
 

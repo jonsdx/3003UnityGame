@@ -31,6 +31,7 @@ public class FBhelper : MonoBehaviour
     string id = "John"; // later get from default student
     string progress = "w0s0"; // world x section x that he has cleared , here is w1s0 means at the start
     Dictionary<string, dynamic> dict_user;
+    int attempt_count;
 
     // Start is called before the first frame update
     void Start()
@@ -118,6 +119,16 @@ public class FBhelper : MonoBehaviour
         reference.Child("Users").Child(uid).Child("progress_str").SetValueAsync(prog);
     }
 
+    public void Save_score(int score, string time = "-",string uid = "-"){
+        if (uid == "-") uid = id;
+        else id = uid;
+        string now = DateTime.Now.ToString();
+        if (time == "-") time = now;
+        reference.Child("Users").Child(uid).Child("History").Child(section_passed).Child((attempt_count).ToString()).Child("Score").SetValueAsync(score);
+        reference.Child("Users").Child(uid).Child("History").Child(section_passed).Child((attempt_count).ToString()).Child("Time").SetValueAsync(time);
+    }
+
+
 ///========== functions to READ from firebase and update class attributes ============================
 
     public void Loop_getQn(){
@@ -144,6 +155,7 @@ public class FBhelper : MonoBehaviour
         else id = uid;
         FirebaseDatabase.DefaultInstance.GetReference("Users").Child(uid).ValueChanged += Script_ValueChanged_User;
     }
+
 
 
 // ------------------------------- helper functions-------------------------
@@ -195,13 +207,22 @@ public class FBhelper : MonoBehaviour
 
 /// ------------------------ THE CHOSEN way of get data functions -----------------
 
-
+    // public void Script_ValueChanged_History (object sender, ValueChangedEventArgs e)
+    // {
+    //     json_ds = e.Snapshot.GetRawJsonValue();
+    //     dict_user = JsonConvert.DeserializeObject<Dictionary<string, object>>(json_ds);
+    //     progress = dict_user["progress_str"];
+    //     Debug.Log("user file copied from firebase");
+    //     return;
+    // }
+    
     public void Script_ValueChanged_User (object sender, ValueChangedEventArgs e)
     {
         json_ds = e.Snapshot.GetRawJsonValue();
         dict_user = JsonConvert.DeserializeObject<Dictionary<string, object>>(json_ds);
         progress = dict_user["progress_str"];
-        Debug.Log("user file copied from firebase");
+        attempt_count = dict_user["History"][section_passed].Count;   /// if never attemp will get error
+        Debug.Log("user file copied from firebase, attempt count is "+attempt_count);
         return;
     }
     
