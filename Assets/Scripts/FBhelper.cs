@@ -33,8 +33,12 @@ public class FBhelper : MonoBehaviour
     Dictionary<string, dynamic> dict_user;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     int attempt_count;
 
+=======
+    public bool returnCatch = false;
+>>>>>>> Stashed changes
 =======
     public bool returnCatch = false;
 >>>>>>> Stashed changes
