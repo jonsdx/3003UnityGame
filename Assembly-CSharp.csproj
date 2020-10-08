@@ -62,11 +62,7 @@
      <Compile Include="Assets\Scripts\MapControl.cs" />
      <Compile Include="Assets\Scripts\MiniGame.cs" />
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <Compile Include="Assets\Scripts\MinigameSubmit.cs" />
-=======
-     <Compile Include="Assets\Scripts\PersistentCharData.cs" />
->>>>>>> Stashed changes
 =======
      <Compile Include="Assets\Scripts\PersistentCharData.cs" />
 >>>>>>> Stashed changes

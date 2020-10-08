@@ -32,12 +32,8 @@ public class FBhelper : MonoBehaviour
     string progress = "w0s0"; // world x section x that he has cleared , here is w1s0 means at the start
     Dictionary<string, dynamic> dict_user;
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     int attempt_count;
 
-=======
-    public bool returnCatch = false;
->>>>>>> Stashed changes
 =======
     public bool returnCatch = false;
 >>>>>>> Stashed changes
